@@ -1,0 +1,12 @@
+.cardOportunidade{
+    width: 30rem;
+    margin-left: 28%;
+}
+
+.card-img-top {
+    display: flex;
+}
+
+.vantagens{
+    background-color: aliceblue;
+}

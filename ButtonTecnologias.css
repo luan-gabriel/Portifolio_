@@ -1,0 +1,85 @@
+.divTecnologias{
+    display: flex;
+    background-color: rgba(86, 123, 156, 0.842);
+    
+}
+
+
+
+.tecnologias {
+    width: 130px;
+    height: 145px;
+    background: #31313100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(250, 250, 250);
+    transition: 0.2s ease-in-out;
+    margin: 2rem;
+    
+  }
+  
+  .imgTecnologias {
+    width:100%;
+    height:70%;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+  }
+  
+  .textBox > .text {
+    font-weight: bold;
+  }
+  
+  .textBox > .head {
+    font-size: 20px;
+  }
+  
+  .textBox > .price {
+    font-size: 17px;
+  }
+  
+  .textBox > span {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  
+  .tecnologias:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .tecnologias:hover > .img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .tecnologias:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+  
